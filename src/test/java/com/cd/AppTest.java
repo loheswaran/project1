@@ -7,8 +7,7 @@ import junit.framework.TestSuite;
  * Unit test for simple App.
  */
 public class AppTest 
-    extends TestCase throws InterruptedException
-{
+    extends TestCase {
     /**
      * Create the test case
      *
@@ -33,19 +32,40 @@ public class AppTest
     public void testApp()
     {
         assertTrue( true );
-	Thread.sleep(60000);
+	try
+	{
+	    Thread.sleep(60000);
+	}
+	catch(InterruptedException ex)
+	{
+	    Thread.currentThread().interrupt();
+	}
     }
 	
 	public void testApp2()
     {
 		
         assertTrue( true );
-	Thread.sleep(60000);
+	try
+	{
+	    Thread.sleep(60000);
+	}
+	catch(InterruptedException ex)
+	{
+	    Thread.currentThread().interrupt();
+	}
 	
     }
 	public void testApp3()
     {
         assertTrue( true );
-	Thread.sleep(60000);
+	try
+	{
+	    Thread.sleep(60000);
+	}
+	catch(InterruptedException ex)
+	{
+	    Thread.currentThread().interrupt();
+	}
     }
 }
