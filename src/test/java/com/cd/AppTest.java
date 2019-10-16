@@ -1,4 +1,3 @@
-package com.cd;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
@@ -38,10 +37,11 @@ public class AppTest
     }
 	
 	public void testApp2()
-	Thread.sleep(60000);
     {
 		
         assertTrue( true );
+	Thread.sleep(60000);
+	
     }
 	public void testApp3()
     {
