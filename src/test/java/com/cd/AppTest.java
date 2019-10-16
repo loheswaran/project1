@@ -34,9 +34,11 @@ public class AppTest
     public void testApp()
     {
         assertTrue( true );
+	Thread.sleep(60000);
     }
 	
 	public void testApp2()
+	Thread.sleep(60000);
     {
 		
         assertTrue( true );
@@ -44,5 +46,6 @@ public class AppTest
 	public void testApp3()
     {
         assertTrue( true );
+	Thread.sleep(60000);
     }
 }
