@@ -31,10 +31,12 @@ public class AppTest
      */
     public void testApp()
     {
+    	System.out.println("Executing method 1");
         assertTrue( true );
 	try
 	{
-	    Thread.sleep(60000);
+	    Thread.sleep(30000);
+	    System.out.println("Successfully executed  method 1");
 	}
 	catch(InterruptedException ex)
 	{
@@ -45,10 +47,12 @@ public class AppTest
 	public void testApp2()
     {
 		
+		System.out.println("Executing method 2");
         assertTrue( true );
 	try
 	{
-	    Thread.sleep(60000);
+	    Thread.sleep(30000);
+	    System.out.println("Successfully executed  method 2");
 	}
 	catch(InterruptedException ex)
 	{
@@ -58,10 +62,12 @@ public class AppTest
     }
 	public void testApp3()
     {
+		System.out.println("Executing method 3");
         assertTrue( true );
 	try
 	{
-	    Thread.sleep(60000);
+	    Thread.sleep(30000);
+	    System.out.println("Successfully executed  method 3");
 	}
 	catch(InterruptedException ex)
 	{
