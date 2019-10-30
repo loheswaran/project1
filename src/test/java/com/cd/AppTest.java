@@ -1,12 +1,13 @@
 package com.cd;
 
+import org.jenkinsci.testinprogress.runner.ProgressBatchSuite;
+import org.junit.Test;
+import org.junit.runner.RunWith;
 import junit.framework.TestCase;
 
-/**
- * Unit test for simple App.
- */
-public class AppTest 
-    extends TestCase {
+//@RunWith(ProgressBatchSuite.class)
+//@BatchTestRunner.BatchTestInclude("**.*Suite")
+public class AppTest {
     /**
      * Create the test case
      *
@@ -16,10 +17,10 @@ public class AppTest
     /**
      * Rigourous Test :-)
      */
+	@Test
     public void testApp()
     {
     	System.out.println("Executing method 1");
-        assertTrue( true );
 	try
 	{
 	    Thread.sleep(30000);
@@ -31,11 +32,11 @@ public class AppTest
 	}
     }
 	
+	@Test
 	public void testApp2()
     {
 		
 		System.out.println("Executing method 2");
-        assertTrue( true );
 	try
 	{
 	    Thread.sleep(30000);
@@ -47,10 +48,10 @@ public class AppTest
 	}
 	
     }
+	@Test
 	public void testApp3()
     {
 		System.out.println("Executing method 3");
-        assertTrue( true );
 	try
 	{
 	    Thread.sleep(30000);
